@@ -1,0 +1,14 @@
+sail up -d
+sail down
+sail composer require predis/predis
+sail composer require aws/aws-sdk-php-laravel
+
+sail artisan make:job MlaExample
+sail artisan make:command Example
+
+sail composer require laravel/horizon
+sail artisan horizon:install
+sail artisan horizon
+
+sudo apt get install supervisor
+
